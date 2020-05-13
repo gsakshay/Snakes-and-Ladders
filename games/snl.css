@@ -1,0 +1,200 @@
+.content{
+  text-align: center;
+  display:grid;
+
+}
+
+.introduction{
+  font-family: Apple Chancery, cursive                                      
+}
+
+.intro-w{
+  color: #120136;
+  font-size: 3rem;
+  @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 1.7rem;
+      line-height: 1.2;
+    }
+    @include respond(phone-xs) {
+      font-size: 1.8rem;
+    }
+
+}
+
+
+
+.container{
+  text-align: center;
+  height:32rem; 
+  width:36rem;
+/*  background-image: url(../photos/snl.jpg);*/
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns:repeat(10,1fr);
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 0;
+
+}
+
+
+.item{
+	/*font-size: 32px;*/
+  /*background-color: black;*/
+  /*display:inline-block;*/
+  /*height:3rem;
+  width:3rem;*/
+  border:1px solid purple;
+  /*border-bottom: 0;*/
+  /*margin-bottom: 1px;*/
+  cursor: pointer;
+   
+}
+
+
+.players{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 10rem;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+
+}
+
+
+.player{
+	height: 18rem;
+	width: 18rem;
+	background-color:#f3d1f4 ;
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.dice{
+	grid-column-start: span 4;
+	height: 5rem;
+	width: 6rem;
+	margin-top: 2rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+}
+
+img.dice{
+	margin-top: 0rem;
+}
+.name{
+	grid-column-start: span 2;
+}
+
+.color{
+	grid-column-start: span 2;
+}
+
+.ready{
+	grid-column-start: span 4;
+	
+	
+}
+
+
+
+
+.readyb{
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+.readyb:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+.readyb:active {
+	position:relative;
+	top:1px;
+}
+
+
+.card{
+	height: 10rem;
+	width: 18rem;
+	background-color:#f3d1f4 ;
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+
+.pawn1{
+	grid-column-start: span 1;
+	margin-top: 1rem;
+	margin-right: 1rem;
+}
+.pawn2{
+	grid-column-start: span 1;
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+
+.start{
+	grid-column-start: span 2;
+	margin-top: 2rem;
+	margin-top: 0px;
+}
+
+
+.startButton {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.startButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.startButton:active {
+	position:relative;
+	top:1px;
+}
+
+.diceHide{
+	display: none;
+}
+
+
+/*div.item1{
+	background-image: url(../photos/snl1.jpg);
+}
+*/
