@@ -31,7 +31,7 @@ function diceClick(){
 		/*console.log(color)*/
 		document.querySelector(id).setAttribute("src","https://www.animatedimages.org/data/media/710/animated-dice-image-0012.gif");
 		setTimeout(function(){
-		document.querySelector(id).setAttribute("src","../photos/dice"+n+".jpg");
+		document.querySelector(id).setAttribute("src","./photos/dice"+n+".jpg");
 		document.getElementById(count1).style.backgroundColor = color1;
 		if(pcount1!==0 && !notify){document.getElementById(pcount1).style.backgroundColor = "white";}
 		setTimeout(function(){
@@ -148,7 +148,7 @@ function diceClick(){
 		/*console.log(color)*/
 		document.querySelector(id).setAttribute("src","https://www.animatedimages.org/data/media/710/animated-dice-image-0012.gif");
 		setTimeout(function(){
-		document.querySelector(id).setAttribute("src","../photos/dice"+n+".jpg");
+		document.querySelector(id).setAttribute("src","./photos/dice"+n+".jpg");
 		document.getElementById(count2).style.backgroundColor = color2;
 		if(pcount2!==0 && !notify){document.getElementById(pcount2).style.backgroundColor = "white";}
 		setTimeout(function(){

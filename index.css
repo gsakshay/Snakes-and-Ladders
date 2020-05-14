@@ -34,7 +34,7 @@
   text-align: center;
   height:32rem; 
   width:36rem;
-/*  background-image: url(../photos/snl.jpg);*/
+/*  background-image: url(./photos/snl.jpg);*/
   margin: 2rem auto;
   display: grid;
   grid-template-columns:repeat(10,1fr);
@@ -195,6 +195,6 @@ img.dice{
 
 
 /*div.item1{
-	background-image: url(../photos/snl1.jpg);
+	background-image: url(./photos/snl1.jpg);
 }
 */
