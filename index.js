@@ -172,7 +172,7 @@ function diceClick(){
 
 			},400);
 		},500);
-		},1000);
+		},1500);
 		if(count1>100){
 			count1-=n;
 		}
@@ -319,7 +319,7 @@ function diceClick(){
 
 			},400);
 		},500);
-		},1000);
+		},1500);
 		if(count2>100){
 			count2-=n;
 		}
@@ -338,13 +338,23 @@ function diceClick(){
 	}
 
 		if(count1 == 100 || count2 == 100){
-			const winAudio = new Audio("./sounds/winner.mp3");
-			winAudio.play();
+			setTimeout(function(){
+				const winAudio = new Audio("./sounds/winner.mp3");
+				winAudio.play();
+			} ,1500)
 		}
 
 	setTimeout(function(){
-		if(count1 == 100 || count2 == 100){
-			alert("Hurray\n!!" + player + "won");
+		const p1 = document.querySelector("#name1").value;
+		const p2 = document.querySelector("#name2").value;
+		if(count1 == 100){
+			alert("Hurray!!\n" + p1 + " won");
+			setTimeout(function(){
+				location.reload();
+			},3000);
+		}
+		if(count2 == 100){
+			alert("Hurray!!\n" + p2 + " won");
 			setTimeout(function(){
 				location.reload();
 			},3000);
